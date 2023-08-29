@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #08122b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  gap: 50px;
+  color: white;
+}
+
+.contact-form-1 {
+  width: 300px;
+  margin-top: 90px;
+  margin-left: 200px;
+}
+
+.contact-form-1 h1 {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  font-size: larger;
+  margin-top: 20px;
+}
+
+.description span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.left-box {
+  margin-top: 40px;
+}
+
+.about {
+  margin-top: 30px;
+  font-size: larger;
+}
+
+.about :last-child {
+  color: #999DAA;
+  font-size: smaller;
+  margin-top: 5px;
+}
+
+
+.time {
+  color: #999DAA;
+  font-size: smaller;
+  margin-top: 5px;
+}
+
+
+
+
+.contact-form-2 {
+  width: auto;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+
+.name {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.name input {
+  outline: none;
+  border-radius: 7px;
+  width: 250px;
+  height: 56px;
+  font-size: large;
+  padding-left: 10px;
+  margin-top: 8px;
+  background: rgb(203, 207, 228);
+}
+
+.name-text {
+  color: #999DAA;
+  margin-top: 20px;
+}
+
+.name-1 input {
+  outline: none;
+  border-radius: 7px;
+  width: 530px;
+  height: 56px;
+  font-size: large;
+  padding-left: 10px;
+  margin-top: 8px;
+  background: rgb(203, 207, 228);
+
+}
+
+
+.btn {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 390px;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+  border-radius: 7px;
+  border: solid 1px #999DAA;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: #999DAA;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+  border-radius: 7px;
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+.btn:hover {
+  border: solid 3px #999DAA;
+  color: black;
+}
